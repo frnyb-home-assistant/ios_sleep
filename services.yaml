@@ -1,0 +1,38 @@
+set_awake:
+  description: Set the device to awake
+  fields:
+    entity_id:
+      required: true
+      description: The entity_id of the device to set awake
+      example: sensor.iphone_ios_sleep_schedule
+      selector:
+        entity:
+          filter:
+            - integration: ios_sleep
+              domain: sensor
+
+set_relaxation:
+  description: Set the device to relaxation
+  fields:
+    entity_id:
+      required: true
+      description: The entity_id of the device to set relaxation
+      example: sensor.iphone_ios_sleep_schedule
+      selector:
+        entity:
+          filter:
+            - integration: ios_sleep
+              domain: sensor
+
+set_sleep:
+  description: Set the device to sleep
+  fields:
+    entity_id:
+      required: true
+      description: The entity_id of the device to set sleep
+      example: sensor.iphone_ios_sleep_schedule
+      selector:
+        entity:
+          filter:
+            - integration: ios_sleep
+              domain: sensor
